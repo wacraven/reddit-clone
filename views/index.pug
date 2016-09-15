@@ -1,0 +1,19 @@
+extends partials/layout.pug
+
+block content
+
+	each post in posts
+		.post.row.s12
+			.votes#votes.col.s2
+				.score
+					p= post.score
+
+
+			.thumbnail.col.s2
+				a(href=post.url)
+					img.thumbImg(src= post.imageURL)
+
+			.headline.col.s8
+				a(href=post.url)
+					h4= post.title
+				p= post.username

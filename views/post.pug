@@ -1,0 +1,31 @@
+extends partials/layout.pug
+
+block content
+  h2 Submit a new post
+  div.row
+    form(method='POST').col.s12
+      div.row
+        div.input-field.col.s2
+        div.input-field.col.s8
+          input(name='username' type='text' class='validate')
+          label(for='username') Username
+      div.row
+        div.input-field.col.s2
+        div.input-field.col.s8
+          input(name='title' type='text' class='validate')
+          label(for='title') Post Title
+      div.row
+        div.input-field.col.s2
+        div.input-field.col.s8
+          input(name='url' type='text' class='validate')
+          label(for='url') Link URL
+      div.row
+        div.input-field.col.s2
+        div.input-field.col.s8
+          input(name='imageURL' type='text' class='validate')
+          label(for='imageURL') Thumbnail URL
+      div.row
+        div.input-field.col.s2
+        button(type='submit' name='action').btn.waves-effect.waves-light.col.s3 Submit
+        div.input-field.col.s2
+        a(href='/').btn.waves-effect.waves-light.col.s3.red Cancel
