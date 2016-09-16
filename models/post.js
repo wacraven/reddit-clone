@@ -8,5 +8,5 @@ module.exports = mongoose.model('Post', {
 	title: String,
 	url: String,
 	imageURL: String,
-	score: Number
+	score: {type: Number, default: 0}
 });
