@@ -54,24 +54,6 @@ app.use((err, { method, url, headers: { 'user-agent': agent } }, res, next) => {
   console.error(err.stack)
 })
 
-// app.use((
-//     err,
-//     { method, url, headers: { 'user-agent': agent } },
-//     res,
-//     next
-//   ) => {
-//     res.sendStatus(err.status || 500)
-
-//     const timeStamp = new Date()
-//     const statusCode = res.statusCode
-//     const statusMessage = res.statusMessage
-
-//     console.error(
-//       `[${timeStamp}] "${chalk.red(`${method} ${url}`)}" Error (${statusCode}): "${statusMessage}"`
-//     )
-//     console.error(err.stack)
-//   }
-// )
 
 // Listen to requests on the provided port and log when available
 
