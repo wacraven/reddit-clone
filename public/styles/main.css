@@ -1,0 +1,19 @@
+body {
+	background-color: #ddd;
+}
+
+.post {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 10px 0;
+	background: white;
+}
+
+.thumbImg {
+	width: 100px;
+}
+
+nav {
+	background-color: #c4dbf1
+}

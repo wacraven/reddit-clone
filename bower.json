@@ -1,0 +1,21 @@
+{
+  "name": "reddit-clone",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Alex Craven <w.alex.craven@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/wacraven/reddit-clone",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.97.7"
+  }
+}
