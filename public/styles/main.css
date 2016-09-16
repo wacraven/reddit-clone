@@ -17,3 +17,7 @@ body {
 nav {
 	background-color: #c4dbf1
 }
+
+.vote {
+	width: 25px;
+}

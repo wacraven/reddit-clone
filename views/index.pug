@@ -5,8 +5,20 @@ block content
 	each post in posts
 		.post.row.s12
 			.votes#votes.col.s2
-				.score
-					p= post.score
+				form(method='POST')
+					.row
+						.col
+							button(type='submit' name='upvote' value=post._id)
+								img(src='/img/upvote.png').vote
+					.row
+						.col
+							.score
+								p= post.score
+					.row
+						.col
+							button(type='submit' name='downvote' value=post._id)
+								img(src='/img/downvote.png').vote
+
 
 
 			.thumbnail.col.s2
